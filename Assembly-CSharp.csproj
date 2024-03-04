@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\Codes\CameraToCursor.cs" />
     <Compile Include="Assets\Codes\Movement.cs" />
+    <Compile Include="Assets\Codes\CameraFollowPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
