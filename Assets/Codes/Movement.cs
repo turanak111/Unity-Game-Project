@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed;
-    bool BoolSpeed = false;
+    public float InputSpeed;
+    public float sprintSpeed;
+    float BaseSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
-       
+            BaseSpeed = InputSpeed;
     }
 
     // Update is called once per frame
@@ -27,47 +28,44 @@ public class Movement : MonoBehaviour
 void playerMovement()
 {
 
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            BaseSpeed = InputSpeed + sprintSpeed;
+        }
+        else 
+        {
+            BaseSpeed = InputSpeed;
+        }
 
-    if (BoolSpeed == true)
-    {
-        speed += 3;
-    }
+
+
 
     if (Input.GetKey(KeyCode.W))
     {
-        transform.Translate (Vector3.up * speed * Time.deltaTime);
+        transform.Translate (Vector3.up * BaseSpeed * Time.deltaTime,Space.World);
     }
     if (Input.GetKey(KeyCode.D))
     {
-        transform.Translate (Vector3.right  * speed * Time.deltaTime);
+        transform.Translate (Vector3.right  * BaseSpeed * Time.deltaTime,Space.World);
     }
         if (Input.GetKey(KeyCode.A))
     {
-        transform.Translate (Vector3.left * speed * Time.deltaTime);
+        transform.Translate (Vector3.left * BaseSpeed * Time.deltaTime,Space.World);
     }
         if (Input.GetKey(KeyCode.S))
     {
-        transform.Translate (Vector3.down * speed * Time.deltaTime);
+        transform.Translate (Vector3.down * BaseSpeed * Time.deltaTime,Space.World);
     }
 
-            if (BoolSpeed == true)
-    {
-        speed -= 3;
-    }
+
 
 
 
 
 
     
-         if (Input.GetKey(KeyCode.LeftShift))
-    {
-        BoolSpeed = true;
-    }
-    else
-    {
-        BoolSpeed = false;
-    }
+ 
+
 
 
 
