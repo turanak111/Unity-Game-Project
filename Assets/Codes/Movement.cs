@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    bool Running = false;
+    bool Moving = false;
+    public Animator animator;
     public float InputSpeed;
     public float sprintSpeed;
     float BaseSpeed;
@@ -11,67 +14,75 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-            BaseSpeed = InputSpeed;
+        BaseSpeed = InputSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
-         playerMovement();
-         
+        playerMovement();
 
 
-        
+
+
     }
 
 
-void playerMovement()
-{
+    void playerMovement()
+    {
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
             BaseSpeed = InputSpeed + sprintSpeed;
+            Running = true;
+
         }
-        else 
+        else
         {
             BaseSpeed = InputSpeed;
+            Running = false;
         }
 
+        Moving = false;
 
 
-
-    if (Input.GetKey(KeyCode.W))
-    {
-        transform.Translate (Vector3.up * BaseSpeed * Time.deltaTime,Space.World);
-    }
-    if (Input.GetKey(KeyCode.D))
-    {
-        transform.Translate (Vector3.right  * BaseSpeed * Time.deltaTime,Space.World);
-    }
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(Vector3.up * BaseSpeed * Time.deltaTime, Space.World);
+            Moving = true;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(Vector3.right * BaseSpeed * Time.deltaTime, Space.World);
+            Moving = true;
+        }
         if (Input.GetKey(KeyCode.A))
-    {
-        transform.Translate (Vector3.left * BaseSpeed * Time.deltaTime,Space.World);
-    }
+        {
+            transform.Translate(Vector3.left * BaseSpeed * Time.deltaTime, Space.World);
+            Moving = true;
+        }
         if (Input.GetKey(KeyCode.S))
-    {
-        transform.Translate (Vector3.down * BaseSpeed * Time.deltaTime,Space.World);
+        {
+            transform.Translate(Vector3.down * BaseSpeed * Time.deltaTime, Space.World);
+            Moving = true;
+        }
+
+        animator.SetBool("IsMoving", Moving);
+        animator.SetBool("IsRunning", Running);
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
-
-
-
-
-
-
-
-    
- 
-
-
-
-
-
-
-}
 
 
 
