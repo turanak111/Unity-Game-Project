@@ -6,30 +6,42 @@ public class CameraFollowPlayer : MonoBehaviour
 {
     GameObject player;
     bool followPlayer = true;
-    // Start is called before the first frame update
+    float minDistance = 0f;
+    float maxDistance = 3f;
+    float smoothSpeed = 1f;
+    Vector3 cursorPosition;
+    Vector3 velocity = Vector3.zero;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (followPlayer == true)
+        
+        cursorPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
+
+        if (followPlayer)
         {
-            camFollowPlayer();
+            FollowPlayerWithCursor();
         }
     }
 
-    public void setFollowPlayer(bool val)
+    public void SetFollowPlayer(bool val)
     {
         followPlayer = val;
     }
 
-    void camFollowPlayer()
-    {
-            Vector3 newPos = new Vector3(player.transform.position.x,player.transform.position.y,this.transform.position.z);
-            this.transform.position = newPos;
-    }
+  void FollowPlayerWithCursor()
+{
+    
+    float distance = Vector3.Distance(player.transform.position, cursorPosition);
+    float clampedDistance = Mathf.Clamp(distance, minDistance, maxDistance);
+    Vector3 targetPosition = player.transform.position + (cursorPosition - player.transform.position).normalized * clampedDistance;
 
+    Vector3 smoothedPosition = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothSpeed * Time.deltaTime);
+    smoothedPosition.z = -10f;
+    transform.position = smoothedPosition;
+}
 }
