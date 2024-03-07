@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
@@ -41,7 +42,6 @@ public class Crosshaircontrol : MonoBehaviour
         {
             BaseSpeed = InputSpeed + sprintSpeed;
          
-
         }
         else
         {
@@ -72,7 +72,6 @@ public class Crosshaircontrol : MonoBehaviour
             transform.Translate(Vector3.down * BaseSpeed * Time.deltaTime, Space.World);
            
         }
-
 
 
 

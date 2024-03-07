@@ -7,8 +7,8 @@ public class CameraFollowPlayer : MonoBehaviour
     GameObject player;
     bool followPlayer = true;
     float minDistance = 0f;
-    float maxDistance = 3f;
-    float smoothSpeed = 1f;
+    public float maxDistance = 3f;
+    public float smoothSpeed = 1f;
     Vector3 cursorPosition;
     Vector3 velocity = Vector3.zero;
 
