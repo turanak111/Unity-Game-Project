@@ -9,9 +9,11 @@ public class BulletScript : MonoBehaviour
 
     public GameObject HitEffect;
 
+  public float explotionDuration = 0.5f;
+
     void OnCollisionEnter2D(Collision2D collision) {
       GameObject effect = Instantiate(HitEffect, transform.position, Quaternion.identity);
-      Destroy(effect,0.5f);
+      Destroy(effect,explotionDuration);
       Destroy(gameObject);  
     }
 
