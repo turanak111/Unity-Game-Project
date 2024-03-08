@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+    public float shakingDuration;
+    public float shakingMagnitude;
+    public CameraShake cameraShake;
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float bulletForce = 20f;
@@ -20,6 +23,7 @@ public class Shooting : MonoBehaviour
         if (timer >= timeBetweenShots && Input.GetButtonDown("Fire1"))
         {
             Shoot();
+            StartCoroutine(cameraShake.Shake(shakingDuration,shakingMagnitude));
             timer = 0f; // Reset the timer after shooting
         }
     }

@@ -515,6 +515,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5def945f89c467c4d8ff6d414d179b5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shakingDuration: 0.1
+  shakingMagnitude: 0.3
+  cameraShake: {fileID: 736543786}
   firePoint: {fileID: 169480942}
   bulletPrefab: {fileID: 6667267942262749777, guid: c940df37994943e42b1cdf35d7ae091e, type: 3}
   bulletForce: 20
@@ -531,6 +534,7 @@ GameObject:
   - component: {fileID: 736543783}
   - component: {fileID: 736543782}
   - component: {fileID: 736543785}
+  - component: {fileID: 736543786}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -626,6 +630,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 3
   smoothSpeed: 1
+--- !u!114 &736543786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736543781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54fb1114527a00d4c90550bb22abd176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1237179988
 GameObject:
   m_ObjectHideFlags: 0

@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\Codes\Crosshaircontrol.cs" />
     <Compile Include="Assets\Codes\Bullet\Shooting.cs" />
+    <Compile Include="Assets\Codes\Camera\CameraShake.cs" />
     <Compile Include="Assets\Codes\CameraToCursor.cs" />
     <Compile Include="Assets\Codes\Movement.cs" />
     <Compile Include="Assets\Codes\CameraFollowPlayer.cs" />
