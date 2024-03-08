@@ -14,7 +14,8 @@ public class Shooting : MonoBehaviour
     public float timeBetweenShots = 0.5f; // Adjust this value for the delay between shots
     public int currentClip, maxClipSize = 11, currentAmmo;
     private float timer;
-    public float timerReload;
+    private float timerReload;   
+    public float reloadTime;
 
     void Update()
     {
@@ -34,9 +35,9 @@ public class Shooting : MonoBehaviour
         if (Input.GetKey(KeyCode.R))
         {
             reloadingBoolean = true;
-            if (timerReload > 4f)
+            if (timerReload > reloadTime)
             {
-                Invoke("Reload", 4f);
+                Invoke("Reload", reloadTime);
                 timerReload = 0f;
             }
         }

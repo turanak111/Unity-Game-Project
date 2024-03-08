@@ -64,12 +64,12 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Codes\Crosshaircontrol.cs" />
+    <Compile Include="Assets\Codes\Camera\CameraFollowPlayer.cs" />
     <Compile Include="Assets\Codes\Bullet\Shooting.cs" />
     <Compile Include="Assets\Codes\Camera\CameraShake.cs" />
-    <Compile Include="Assets\Codes\CameraToCursor.cs" />
-    <Compile Include="Assets\Codes\Movement.cs" />
-    <Compile Include="Assets\Codes\CameraFollowPlayer.cs" />
+    <Compile Include="Assets\Codes\Camera\CameraToCursor.cs" />
+    <Compile Include="Assets\Codes\Movement\Movement.cs" />
+    <Compile Include="Assets\Codes\Crosshair\Crosshaircontrol.cs" />
     <Compile Include="Assets\Codes\Bullet\BulletScript.cs" />
     <Compile Include="Assets\Codes\Bullet\AmmoTextCanvas.cs" />
   </ItemGroup>
