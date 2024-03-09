@@ -6,6 +6,7 @@ public class Shooting : MonoBehaviour
 {
     public AudioClip ShootingSound;
     public AudioClip ReloadiongSound;
+    public AudioClip BulletShellSound;
     public AudioSource audioSource;
     bool reloadingBoolean = false;
     public float shakingDuration;
@@ -32,6 +33,7 @@ public class Shooting : MonoBehaviour
         {
             Shoot();
             StartCoroutine(cameraShake.Shake(shakingDuration,shakingMagnitude));
+            Invoke("BulletShell",.25f);
             timer = 0f; // Reset the timer after shooting
             currentClip--;
         }
@@ -64,5 +66,10 @@ public class Shooting : MonoBehaviour
         currentClip += reloadAmount;
         currentAmmo -= reloadAmount;
         reloadingBoolean = false;
+    }
+
+    public void BulletShell()
+    {
+        audioSource.PlayOneShot(BulletShellSound);
     }
 }

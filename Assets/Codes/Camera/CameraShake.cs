@@ -29,6 +29,7 @@ public class CameraShake : MonoBehaviour
             yield return null;
         }
 
+    
         // Reset camera position to original position after shake
         transform.localPosition = originalPos;
     }
