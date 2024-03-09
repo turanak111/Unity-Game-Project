@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+    public AudioClip ShootingSound;
+    public AudioClip ReloadiongSound;
+    public AudioSource audioSource;
     bool reloadingBoolean = false;
     public float shakingDuration;
     public float shakingMagnitude;
@@ -16,6 +19,7 @@ public class Shooting : MonoBehaviour
     private float timer;
     private float timerReload;   
     public float reloadTime;
+    
 
     void Update()
     {
@@ -37,6 +41,7 @@ public class Shooting : MonoBehaviour
             reloadingBoolean = true;
             if (timerReload > reloadTime)
             {
+                audioSource.PlayOneShot(ReloadiongSound);
                 Invoke("Reload", reloadTime);
                 timerReload = 0f;
             }
@@ -45,6 +50,7 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
+        audioSource.PlayOneShot(ShootingSound);
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
