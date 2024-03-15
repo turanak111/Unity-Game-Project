@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bd5adc62997353940a2365c5775be0d7
+guid: 442d7cce58b2bd447bf25f6608e90854
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,238 +97,217 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Sprites_0
+      name: Yurumeveates_0
       rect:
         serializedVersion: 2
         x: 9
         y: 72
         width: 17
         height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.41481996, y: 0.49999985}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afb3133011e7a9f48b394562cb3a0ab7
-      internalID: -536494001
+      spriteID: f9a27a8fc07220042a5bb2fa10f9dd36
+      internalID: 1435248892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Sprites_1
+      name: Yurumeveates_1
       rect:
         serializedVersion: 2
-        x: 71
+        x: 62
+        y: 74
+        width: 42
+        height: 51
+      alignment: 9
+      pivot: {x: 0.26207024, y: 0.5000003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcee22fc7012d9b48a7d138ff2484133
+      internalID: -1545492855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yurumeveates_2
+      rect:
+        serializedVersion: 2
+        x: 124
         y: 72
-        width: 41
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 54
+        height: 52
+      alignment: 9
+      pivot: {x: 0.29800498, y: 0.5000003}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9a25d3f7d02f8e48b06e931ea50b277
-      internalID: 102403518
+      spriteID: fc9cd9d44b2633e4ba996d3107f54787
+      internalID: -686572144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Sprites_2
+      name: Yurumeveates_3
       rect:
         serializedVersion: 2
-        x: 136
+        x: 204
         y: 73
-        width: 52
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 51
+      alignment: 9
+      pivot: {x: 0.2601569, y: 0.5000003}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e5c449500cb69b4398633a6765313db
-      internalID: -1326694760
+      spriteID: 80ed4f921ee01174c8cf213dc3463df6
+      internalID: 1641064985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Sprites_3
+      name: Yurumeveates_4
       rect:
         serializedVersion: 2
-        x: 216
-        y: 71
-        width: 45
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c95d5895c45def41a59bded273492df
-      internalID: 416133860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Sprites_4
-      rect:
-        serializedVersion: 2
-        x: 286
+        x: 280
         y: 71
         width: 54
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 52
+      alignment: 9
+      pivot: {x: 0.2957193, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cf5cbd006e9632468cefe3a47dc7284
-      internalID: 457067039
+      spriteID: c46536d075ab5564b8b332aa1761ca09
+      internalID: -707451067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Sprites_7
+      name: Yurumeveates_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 58
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5205466, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: add23e48430f2ec4da8997a80d63815f
-      internalID: -957263305
+      spriteID: 369016f6a4521c34e83324ae9dcaf693
+      internalID: -53059998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Sprites_8
+      name: Yurumeveates_6
       rect:
         serializedVersion: 2
         x: 68
         y: 0
         width: 57
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5255532, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c4ebd423e87ed243843f5e55622064f
-      internalID: 1079964974
+      spriteID: 8e43e9f1a934cbc46acffe4f4bfd2c2b
+      internalID: -1795053656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Sprites_9
+      name: Yurumeveates_7
       rect:
         serializedVersion: 2
         x: 141
         y: 0
         width: 57
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5255534, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24746cfaab7675c48ba5a3bef8762edf
-      internalID: -1618517385
+      spriteID: e94e957ad5101fe4ebef010d219e3555
+      internalID: -1323933249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Sprites_10
+      name: Yurumeveates_8
       rect:
         serializedVersion: 2
         x: 219
         y: 0
         width: 55
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5463823, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a9558c72b984254aa2bf5b8c0bfe3f0
-      internalID: -125669131
+      spriteID: 87215eb7b5d5082478391a66fa77528e
+      internalID: -771239857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Sprites_11
+      name: Yurumeveates_9
       rect:
         serializedVersion: 2
         x: 298
         y: 0
-        width: 54
+        width: 60
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 972e1993cc0a7474d949527e3e235df0
-      internalID: 1287051339
+      spriteID: f2a36ab2976ae1a448c6ced774e4b119
+      internalID: 339578137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Sprites_12
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 23
-        width: 5
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0439f099c8a838041ac0d4050bf38266
-      internalID: -1122666519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Sprites_13
+      name: Yurumeveates_11
       rect:
         serializedVersion: 2
         x: 373
@@ -336,14 +315,14 @@ TextureImporter:
         width: 60
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bfe508d746dc7146945490c45fb23e3
-      internalID: 919533654
+      spriteID: 863300065bfd041458319a7d257fa70d
+      internalID: 1050448510
       vertices: []
       indices: 
       edges: []
@@ -359,20 +338,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player Sprites_0: -536494001
-      Player Sprites_1: 102403518
-      Player Sprites_10: -125669131
-      Player Sprites_11: 1287051339
-      Player Sprites_12: -1122666519
-      Player Sprites_13: 919533654
-      Player Sprites_2: -1326694760
-      Player Sprites_3: 416133860
-      Player Sprites_4: 457067039
-      Player Sprites_5: -308833269
-      Player Sprites_6: 273311754
-      Player Sprites_7: -957263305
-      Player Sprites_8: 1079964974
-      Player Sprites_9: -1618517385
+      Yurumeveates_0: 1435248892
+      Yurumeveates_1: -1545492855
+      Yurumeveates_10: -434891962
+      Yurumeveates_11: 1050448510
+      Yurumeveates_2: -686572144
+      Yurumeveates_3: 1641064985
+      Yurumeveates_4: -707451067
+      Yurumeveates_5: -53059998
+      Yurumeveates_6: -1795053656
+      Yurumeveates_7: -1323933249
+      Yurumeveates_8: -771239857
+      Yurumeveates_9: 339578137
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+    public Animator animator;
+    public bool isshootingbool;
     public AudioClip ShootingSound;
     public AudioClip ReloadiongSound;
     public AudioClip BulletShellSound;
@@ -16,17 +18,25 @@ public class Shooting : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletForce = 20f;
     public float timeBetweenShots = 0.5f; // Adjust this value for the delay between shots
-    public int currentClip, maxClipSize = 11, currentAmmo;
+    public int currentClip, maxClipSize, currentAmmo;
     private float timer;
     private float timerReload;   
     public float reloadTime;
     
 
+    void Start()
+    {
+        isshootingbool = false;
+
+    }
     void Update()
     {
+        animator.SetBool("IsReloading", reloadingBoolean);
+        animator.SetBool("IsShooting", isshootingbool);
         // Increment the timer by the time passed since the last frame
         timer += Time.deltaTime;
         timerReload += Time.deltaTime;
+        
 
         // Check if enough time has passed since the last shot
         if (timer >= timeBetweenShots && Input.GetButtonDown("Fire1") && currentClip>0 && reloadingBoolean == false )
@@ -38,11 +48,11 @@ public class Shooting : MonoBehaviour
             currentClip--;
         }
 
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.R ))
         {
-            reloadingBoolean = true;
-            if (timerReload > reloadTime)
-            {
+            
+            if (timerReload > reloadTime && currentClip != maxClipSize)
+            {   reloadingBoolean = true;
                 audioSource.PlayOneShot(ReloadiongSound);
                 Invoke("Reload", reloadTime);
                 timerReload = 0f;
@@ -52,10 +62,13 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
+        isshootingbool = true;
         audioSource.PlayOneShot(ShootingSound);
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
+        Invoke("timeofshootinganim",0.28f); 
+        
     }
 
     public void Reload()
@@ -66,10 +79,21 @@ public class Shooting : MonoBehaviour
         currentClip += reloadAmount;
         currentAmmo -= reloadAmount;
         reloadingBoolean = false;
+        
     }
 
     public void BulletShell()
     {
         audioSource.PlayOneShot(BulletShellSound);
     }
+    
+    public void timeofshootinganim()
+    {
+       isshootingbool = false;
+
+
+
+    } 
+
+
 }

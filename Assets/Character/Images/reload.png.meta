@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7a6b5a53d8128a942a05c07a3af46825
+guid: d191eab09b1f7a74f8a3ed8777dd8455
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,19 +81,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,12 +97,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Karakter_0
+      name: reload_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 48
-        width: 65
+        x: 0
+        y: 0
+        width: 58
         height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,19 +111,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ef1c6130cec4db49889cb2d07853366
-      internalID: 134516580
+      spriteID: 0f98caa6933b21c47b21f87e4c887340
+      internalID: 1984137118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Karakter_1
+      name: reload_1
       rect:
         serializedVersion: 2
-        x: 91
-        y: 48
-        width: 69
+        x: 64
+        y: 0
+        width: 58
         height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,19 +132,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c60457b719f99f84a9dbd4cf6127d222
-      internalID: 740457825
+      spriteID: b374b1ff0e5fa7f41aec1c179e02f402
+      internalID: -1435851677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Karakter_2
+      name: reload_2
       rect:
         serializedVersion: 2
-        x: 166
-        y: 48
-        width: 74
+        x: 128
+        y: 0
+        width: 58
         height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,19 +153,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42164c25922bfbd4596477870075d5af
-      internalID: -2097231012
+      spriteID: d633fb915b9612342b575ad698369410
+      internalID: 1294969519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Karakter_3
+      name: reload_3
       rect:
         serializedVersion: 2
-        x: 251
-        y: 48
-        width: 69
+        x: 192
+        y: 0
+        width: 58
         height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,19 +174,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ea8d84c5d54160459b2b61a93988d1e
-      internalID: 1712463387
+      spriteID: 7e2177f08083c2945b175184d8ceb34b
+      internalID: 1134446007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Karakter_4
+      name: reload_4
       rect:
         serializedVersion: 2
-        x: 326
-        y: 48
-        width: 74
+        x: 256
+        y: 0
+        width: 58
         height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -208,8 +195,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8c952888b3265d44ab876cbc5847644
-      internalID: 1317949826
+      spriteID: ec4f485569d49ea4882bc443f714a195
+      internalID: -476999753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reload_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ec0df53013f1949be478bae980f26e
+      internalID: -1800369688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reload_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a61c89d9cf39a40b7b65b92d7e2fd2
+      internalID: 850904282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reload_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790724588ef552542b8859530ff9f244
+      internalID: 419191457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reload_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a1ab21091943c4f8933af7bf931025
+      internalID: -607523558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reload_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db32b1766f3108438a4b2ffca83e471
+      internalID: -5167712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reload_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28faf2f5d18ec04498ba074b328043a5
+      internalID: -304688247
       vertices: []
       indices: 
       edges: []
@@ -225,11 +338,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Karakter_0: 134516580
-      Karakter_1: 740457825
-      Karakter_2: -2097231012
-      Karakter_3: 1712463387
-      Karakter_4: 1317949826
+      reload_0: 1984137118
+      reload_1: -1435851677
+      reload_10: -304688247
+      reload_2: 1294969519
+      reload_3: 1134446007
+      reload_4: -476999753
+      reload_5: -1800369688
+      reload_6: 850904282
+      reload_7: 419191457
+      reload_8: -607523558
+      reload_9: -5167712
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
