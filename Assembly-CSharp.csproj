@@ -59,7 +59,6 @@
     <UnityVersion>2022.3.20f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\Selim\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -68,6 +67,8 @@
     <Compile Include="Assets\Codes\Bullet\Shooting.cs" />
     <Compile Include="Assets\Codes\Camera\CameraShake.cs" />
     <Compile Include="Assets\Codes\Camera\CameraToCursor.cs" />
+    <Compile Include="Assets\Open.cs" />
+    <Compile Include="Assets\Codes\Interaction\DoorController.cs" />
     <Compile Include="Assets\Codes\Interaction\CollidableObject.cs" />
     <Compile Include="Assets\Codes\Movement\Movement.cs" />
     <Compile Include="Assets\Codes\Crosshair\Crosshaircontrol.cs" />
